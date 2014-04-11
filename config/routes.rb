@@ -1,6 +1,5 @@
 EstateNation::Application.routes.draw do
-  get "welcome/index"
 
-  get "welcome/locations"
+  get 'locations', to: "welcome#locations", as: 'locations'
   root to: "welcome#index"
 end
