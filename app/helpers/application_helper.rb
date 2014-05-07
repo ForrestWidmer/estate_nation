@@ -1,2 +1,30 @@
 module ApplicationHelper
+  CITIES = [ 
+              "Apache Junction",
+              "Avondale",
+              "Buckeye",
+              "Cave Creek",
+              "Chandler",
+              "El Mirage",
+              "Flagstaff",
+              "Fountain Hills",
+              "Gilbert",
+              "Glendale",
+              "Goodyear",
+              "Guadalupe",
+              "Litchfield Park",
+              "Maricopa",
+              "Mesa",
+              "Paradise Valley",
+              "Peoria",
+              "Phoenix",
+              "Queen Creek",
+              "Scottsdale",
+              "Sedona",
+              "Surprise",
+              "Tempe",
+              "Tolleson",
+              "Tucson",
+              "Youngtown" 
+            ]
 end

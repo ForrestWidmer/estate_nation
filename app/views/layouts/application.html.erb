@@ -48,22 +48,19 @@
         <a  title="Home" href="/"><span>Home</span></a>
       </li>
       <li>
-        <%= link_to "Category 1" %>
+        <%= link_to "Residential For Sale" %>
       </li>
       <li>
-        <%= link_to "Category 2" %>
+        <%= link_to "Residential for Lease" %>
       </li>
       <li>
-        <%= link_to "Category 3" %>
+        <%= link_to "Commercial For Sale" %>
       </li>
       <li>
-        <%= link_to "Category 4" %>
+        <%= link_to "Commercial For Lease" %>
       </li>
       <li>
-        <%= link_to "Category 5" %>
-      </li>
-      <li>
-        <%= link_to "Category 6" %>
+        <%= link_to "Land" %>
       </li>
     </ul>
   </div>
@@ -78,35 +75,19 @@
           <ul id="custom_accordion">
             <ul id="custom_accordion">
               <li class="category25 custom-parent-li">
-                <a class="cuuchild custom-parent active" href="http://www.auctionnation.net/locations/nationwide"><b>All Nationwide</b></a>
+                <a class="cuuchild custom-parent active" href="http://www.auctionnation.net/locations/nationwide"><b>All (Nationwide)</b></a>
                 <ul>
                 </ul>
               </li>
 
-              <li class="category25 custom-parent-li"><a class="cuuchild custom-parent active" href="http://www.auctionnation.net/locations/arizona"><b>Arizona</b></a>
-                <ul>
-                  <li class="category25">
-                    <a class="nochild" href="http://www.auctionnation.net/locations/phoenix">Phoenix Area</a>
-                  </li>
-                  <li class="category25">
-                    <a class="nochild" href="http://www.auctionnation.net/locations/tucson-arizona-auctions">Tucson Area</a>
-                  </li>
-                </ul>
-              </li>
               <li class="category25 custom-parent-li">
-                <a class="cuuchild custom-parent active" href="http://www.auctionnation.net/locations/new-mexico"><b>New Mexico</b></a>
+              <a class="cuuchild custom-parent active" href="http://www.auctionnation.net/locations/arizona"><b>Arizona</b></a>
                 <ul>
+                  <% ApplicationHelper::CITIES.each do |city| %>
                   <li class="category25">
-                    <a class="nochild" href="http://www.auctionnation.net/locations/albuquerque">Albuquerque Area</a>
+                    <a class="nochild" href="http://www.auctionnation.net/locations/phoenix"><%= city %></a>
                   </li>
-                </ul>
-              </li>
-              <li class="category25 custom-parent-li">
-                <a class="cuuchild custom-parent active" href="http://www.auctionnation.net/locations/wisconsin-online-auctions"><b>Wisconsin</b></a>
-                <ul>
-                  <li class="category25">
-                    <a class="nochild" href="http://www.auctionnation.net/locations/milwaukee">Milwaukee Area</a>
-                  </li>
+                  <% end %>
                 </ul>
               </li>
             </ul>
